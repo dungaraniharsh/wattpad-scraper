@@ -8,8 +8,7 @@ Get wattpad stories, download wattpad stories, convert wattpad stories to ebook 
 - Login to wattpad
 
 ### Important Links
-- [GitHub](https://github.com/shhossain/wattpad-scraper)
-- [PYPI](https://pypi.org/project/wattpad-scraper/)
+- [GitHub](https://github.com/dungaraniharsh/wattpad-scraper)
 
 ## Installation
 

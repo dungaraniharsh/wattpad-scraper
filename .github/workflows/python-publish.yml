@@ -35,9 +35,8 @@ jobs:
     - name: Create tag
       id: tag
       run: |
-        git config --global user.email hossain0338@gmail.com
-        git config --global user.name shhossain
-        git remote set-url origin https://${{secrets.COMMIT_SECRET}}@github.com/shhossain/wattpad-scraper.git
+        git config --global user.email harshdungarani10@gmail.com
+        git config --global user.name harshdungarani
         git fetch --tags --all
         previous_version=$(git for-each-ref refs/tags --sort=-taggerdate --format='%(refname)' --count=1 | cut -d/ -f3)
         echo "previous_version: $previous_version"
@@ -138,10 +137,7 @@ jobs:
         if: env.WORKFLOW_CONCLUSION == 'failure'
         # delete the created tag
         run: |
-          git config --global user.email hossain0338@gmail.com
-          git config --global user.name shhossain
-          git remote set-url origin https://${{secrets.COMMIT_SECRET}}@github.com/shhossain/wattpad-scraper.git
+          git config --global user.email harshdungarani10@gmail.com
+          git config --global user.name harsh
           git tag -d ${{ needs.createTag.outputs.version }}
           git push --delete origin ${{ needs.createTag.outputs.version }}
-      
-    

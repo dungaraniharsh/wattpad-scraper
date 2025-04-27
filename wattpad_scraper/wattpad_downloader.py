@@ -165,7 +165,7 @@ class Wattpad:
             except Exception as e:
                 self.log.error(f"[{response.status_code}] {response.text}\nError: {e}")
                 self.log.info(f"if you can't solve this error, please report it to the developer")
-                self.log.info(f"Or submit a bug report at https://github.com/shhossain/wattpad-scraper/issues")
+                self.log.info(f"Or submit a bug report at https://github.com/dungaraniharsh/wattpad-scraper/issues")
                 return []
         else:
             try:
@@ -173,13 +173,4 @@ class Wattpad:
             except Exception as e:
                 self.log.error(f"[{response.status_code}] {response.text}\nError: {e}")
                 self.log.info(f"if you can't solve this error, please report it to the developer")
-                self.log.info(f"Or submit a bug report at https://github.com/shhossain/wattpad-scraper/issues")
-
-
-
-        
-
-
-# if __name__ == "__main__":
-#     wattped = Wattpad()
-#     wattped.search_book('harry potter')
+                self.log.info(f"Or submit a bug report at https://github.com/dungaraniharsh/wattpad-scraper/issues")
